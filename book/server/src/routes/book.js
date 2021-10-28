@@ -15,7 +15,7 @@ BookRouter.route('/:id').get((req, res) => {
 })
 
 BookRouter.route('/').post((req, res) => {
-    Book.findOne({ name: req.body.name, done: false }, (err, book) => { //중복체크
+    Book.findOne({ ISBN: req.body.ISBN }, (err, book) => { //중복체크
         if (err) throw err;
         if (!book) {
             const newBook = new Book(req.body);
