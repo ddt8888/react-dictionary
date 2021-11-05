@@ -7,17 +7,19 @@ body {
 #search-box{
     width: 100%;
     text-align: center;
-    margin: 50px;
+    margin-bottom: 50px;
+    background: olive;
 }
 #search{
     all: unset;
     width: 400px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding-left: 20px;
     text-align: left;
     border: 2px solid rgb(224, 224, 224);
-    color: #ff7f00;
+    background-color: aliceblue;
+    color: #000000;
 }
 #submit{
     all: unset;
@@ -35,15 +37,15 @@ body {
 
 #container {
     width: 60%;
-    columns: 2;
+    /* columns: 2; */
     margin: 50px auto;
 }
 .item {
     width: 100%;
     /* height: 300px; */ 
     margin-bottom: 10px;
-    background: tomato;
-    display: inline-block; /* 컬럼 짤림 방지*/
+    /* background: tomato; */
+    /* display: inline-block; 컬럼 짤림 방지 */
 }
 
 
